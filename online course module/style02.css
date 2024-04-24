@@ -418,11 +418,11 @@ i{
 
 #course-status,#course-level{
   gap: 5rem;
-  position: fixed;
   margin-top: 3%;
   padding: 7px 15px;
   font-family: inherit;
   line-height: inherit;
+  border-radius: 8cap;
 }
 
 #routingMenu{
