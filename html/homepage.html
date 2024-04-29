@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oriental Group of Institutes</title>
+    <link rel="icon" href="../media/favicon.ico" />
+    <link rel="stylesheet" href="../css/homepage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+        <div class="navbar">
+            <div class="left">
+    <div class="menu-btn">
+        <div class="dropdown">
+    <button><i class="fa-solid fa-bars"></i></button>
+       
+            
+                
+                <div class="dropdown-content">
+                    <div class="searchbar">
+                        <input type="text" placeholder="Search..." id="searchInput" onkeyup="searchModules()" class="search_bar">
+                    </div>
+                    <a href="../html/homepage.html"><span class="icon"><i class="fa-solid fa-house"></i></span>Home</a>
+                    <a href="../html/dashboard.html"><span class="icon"><i class="fa-solid fa-book"></i></span>Online course</a>
+                   <a href=""><span class="icon"><i class="fa-solid fa-file"></i></span>Notes</a>
+                   <a href="../html/assignment.html"><span class="icon"><i class="fa-solid fa-chart-simple"></i></span>Assignments</a>
+                   <a href=""><span class="icon"><i class="fa-solid fa-user"></i></span>profile</a>
+                    <a href="../html/index.html"><span class="icon"><i class="fa-regular fa-calendar-days"></i></span>Attendance</a>
+                    <a href=""><span class="icon"><i class="fa-solid fa-pen"></i></span>Online Exam</a>
+                    <a href="../html/leaderboard.html"><span class="icon"><i class="fa-solid fa-trophy"></i></span>Leaderboard</a>
+                    <a href=""><span class="icon"><i class="fa-solid fa-dollar-sign"></i></span>Fees</a>
+                   <a href="../html/crt.html"><span class="icon"><i class="fa-solid fa-dollar-sign"></i></span>Training and Placement</a>
+                  <a href="../html/result.html"><span class="icon"><i class="fa-solid fa-chart-simple"></i></span>Result</a>
+            </div>
+          </div>
+        <div name="dropdown">
+            
+        </div>
+    
+    
+    </div>
+    <div class="college_name">
+    <p>Oriental college of Technology</p>
+    </div>
+    </div>
+            <div class="right">
+              <div class="profile">
+                <div class="notification-container">
+                  <button class="notification-btn">
+                    <span class="notification-icon"> <i class="border fa-solid fa-bell"></i></span>
+                    <span class="notification-count">0</span>
+                  </button>
+                  <div class="notification-dropdown">
+                    <div class="notification-header">
+                      <h3>Notifications</h3>
+                    </div>
+                    <div class="notification-list">
+                      <p class="no-notifications">No new notifications</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown-module">
+                  <button class="dropdown-btn-module">  <i class="border fa-solid fa-layer-group"></i></button>
+                  <div class="dropdown-content-module">
+                    <div class="dropdown-header-module">
+                      <h3>Modules</h3>
+                      <input type="text" placeholder="Search..." id="searchInput" onkeyup="searchModules()">
+                      <button id="startRecordingBtn"><i class="fa-solid fa-microphone"></i></button>
+                    </div>
+                    <div class="module-list-module">
+                      <a href="../html/homepage.html" class="module-container-module">
+                        <span class="icon-module"><i class="fa-solid fa-house"></i></span>
+                        <span class="module-name-module">Home</span>
+                      </a>
+                      <a href="../html/dashboard.html" class="module-container-module">
+                        <span class="icon-module"><i class="fa-solid fa-book"></i></span>
+                        <span class="module-name-module">Online course</span>
+                      </a>
+                      <a href="#" class="module-container-module">
+                        <span class="icon-module"><i class="fa-solid fa-file"></i></span>
+                        <span class="module-name-module">Notes</span>
+                      </a>
+                      <a href="#" class="module-container-module">
+                        <span class="icon-module"><i class="fa-solid fa-user"></i></span>
+                        <span class="module-name-module">Profile</span>
+                      </a>
+                      <a href="../html/index.html" class="module-container-module">
+                        <span class="icon-module"><i class="fa-solid fa-calendar-days"></i></span>
+                        <span class="module-name-module">Attendence</span>
+                      </a>
+                      <a href="#" class="module-container-module">
+                        <span class="icon-module"><i class="fa-solid fa-pen"></i></span>
+                        <span class="module-name-module">Online EXam</span>
+                      </a>
+                      <a href="../html/assignment.html" class="module-container-module">
+                        <span class="icon-module"><i class="fa-solid fa-chart-simple"></i></span>
+                        <span class="module-name-module">Assignments</span>
+                      </a>
+                      <a href="../html/leaderboard.html" class="module-container-module">
+                        <span class="icon-module"><i class="fa-solid fa-trophy"></i></span>
+                        <span class="module-name-module">Leaderboard</span>
+                      </a>
+                      <a href="#" class="module-container-module">
+                        <span class="icon-module"><i class="fa-solid fa-dollar-sign"></i></span>
+                        <span class="module-name-module">Fees</span>
+                      </a>
+                      <a href="../html/crt.html" class="module-container-module">
+                        <span class="icon-module"><i class="fa-solid fa-briefcase"></i></span>
+                        <span class="module-name-module">Training and Placement</span>
+                      </a>
+                      <a href="../html/result.html" class="module-container-module">
+                        <span class="icon-module"><i class="fa-solid fa-chart-simple"></i></span>
+                        <span class="module-name-module">Result</span>
+                      </a>
+                     
+                    </div>
+                  </div>
+                </div>
+    
+          
+                <i class="border fa-regular fa-star-half-stroke"></i>
+                <div class="image-container-profile">
+                  <img src="../media/profile.png" alt="Dropdown Image" class="dropdown-image-profile">
+                  <div class="dropdown-content-profile">
+                    <div class="dropdown-header-profile">
+                      <img src="../media/profile.png" alt="Dropdown Image" class="dropdown-image-small-profile">
+                    </div>
+                    <div class="option-container-profile">
+                      <h3>Degree</h3>
+                      <div class="options-profile">
+                        <div class="option-profile">
+                          BTech
+                          <div class="nested-dropdown-profile">
+                            <span class="nested-option-profile">CSE</span>
+                            <span class="nested-option-profile">CSDS</span>
+                            <span class="nested-option-profile">Cyber</span>
+                            <span class="nested-option-profile">Civil</span>
+                            <span class="nested-option-profile">Mechanical</span>
+                            <span class="nested-option-profile">EC</span>
+                            <span class="nested-option-profile">EX</span>
+                          </div>
+                        </div>
+                        <div class="option-profile">
+                          MBA
+                        </div>
+                        <div class="option-profile">
+                          Pharmacy
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <div class="option-container-profile">
+                      <input type="text" placeholder="Search..." id="searchInput" onkeyup="searchModules()">
+                      <button id="startRecordingBtn"><i class="fa-solid fa-microphone"></i></button>
+                      <h3>Year</h3>
+                      <div class="options-profile">
+                        <span class="option-profile">2021</span>
+                        <span class="option-profile">2022</span>
+                        <span class="option-profile">2023</span>
+                        <span class="option-profile">2024</span>
+                        <span class="option-profile">2025</span>
+                        <span class="option-profile">2026</span>
+                        <span class="option-profile">2027</span>
+                        <span class="option-profile">2028</span>
+                        <span class="option-profile">2029</span>
+                        <span class="option-profile">2030</span>
+                  
+                        
+    
+    
+                      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="sign-out">
+                  <i class="border fa-solid fa-power-off"></i>
+                  <p class="border">Sign-out</p>
+                </div>
+              </div>      
+                  </div>
+                </div>
+      <section class="header-section">
+        <div class="lines">
+          <i class="fa-solid fa-quote-right"></i>
+          <p>Vission</p>
+          <p>Mission</p>
+        </div>
+        <div class="header-section-profile">
+          <div class="header-section-profile-sub1">
+            <img
+              width="75px
+            "
+              src="../media/profile.png"
+              alt=""
+            />
+            <p>Student Name</p>
+          </div>
+          <hr />
+          <div class="header-section-profile-sub2">
+            <select class="profile-select" name="" id="">
+              <option value="">2023-24</option>
+              <option value="">2022-23</option>
+            </select>
+
+            <select class="profile-select" name="" id="branch-name">
+              <option value="">B.Tech CSE</option>
+            </select>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="top">
+        <div class="top-circle">
+          <div class="top-circle-sub1">
+            <img width="80px" src="../media/download.png" alt="" />
+            <div>
+              <p>0</p>
+              <p>My Applications</p>
+            </div>
+          </div>
+          <hr />
+          <div class="top-circle-sub2">
+            <img
+              width="200px"
+              src="../media/noEvents.1f0e35e8.png"
+              alt=""
+            />
+            <p>
+              No events are scheduled at the moment. Keep an eye out for
+              upcoming gatherings and activities.
+            </p>
+          </div>
+        </div>
+        <div class="top-circle">
+          <div class="top-circle-sub1">
+            <img width="80px" src="../media/download.png" alt="" />
+            <div>
+              <p>0</p>
+              <p>My Applications</p>
+            </div>
+          </div>
+          <hr />
+          <div class="top-circle-sub2">
+            <img
+              width="200px"
+              src="../media/noEvents.1f0e35e8.png"
+              alt=""
+            />
+            <p>
+              No events are scheduled at the moment. Keep an eye out for
+              upcoming gatherings and activities.
+            </p>
+          </div>
+        </div>
+        <div class="top-circle">
+          <div class="top-circle-sub1">
+            <img width="80px" src="../media/download.png" alt="" />
+            <div>
+              <p>0</p>
+              <p>My Applications</p>
+            </div>
+          </div>
+          <hr />
+          <div class="top-circle-sub2">
+            <img
+              width="200px"
+              src="../media/noEvents.1f0e35e8.png"
+              alt=""
+            />
+            <p>
+              No events are scheduled at the moment. Keep an eye out for
+              upcoming gatherings and activities.
+            </p>
+          </div>
+        </div>
+        <div class="top-circle">
+          <div class="top-circle-sub1">
+            <img width="80px" src="../media/download.png" alt="" />
+            <div>
+              <p>0</p>
+              <p>My Applications</p>
+            </div>
+          </div>
+          <hr />
+          <div class="top-circle-sub2">
+            <img
+              width="200px"
+              src="../media/noEvents.1f0e35e8.png"
+              alt=""
+            />
+            <p>
+              No events are scheduled at the moment. Keep an eye out for
+              upcoming gatherings and activities.
+            </p>
+          </div>
+        </div>
+        <div class="top-circle">
+          <div class="top-circle-sub1">
+            <img width="80px" src="../media/download.png" alt="" />
+            <div>
+              <p>0</p>
+              <p>My Applications</p>
+            </div>
+          </div>
+          <hr />
+          <div class="top-circle-sub2">
+            <img
+              width="200px"
+              src="../media/noEvents.1f0e35e8.png"
+              alt=""
+            />
+            <p>
+              No events are scheduled at the moment. Keep an eye out for
+              upcoming gatherings and activities.
+            </p>
+          </div>
+        </div>
+        <div class="top-circle">
+          <div class="top-circle-sub1">
+            <img width="80px" src="../media/download.png" alt="" />
+            <div>
+              <p>0</p>
+              <p>My Applications</p>
+            </div>
+          </div>
+          <hr />
+          <div class="top-circle-sub2">
+            <img
+              width="200px"
+              src="../media/noEvents.1f0e35e8.png"
+              alt=""
+            />
+            <p>
+              No events are scheduled at the moment. Keep an eye out for
+              upcoming gatherings and activities.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+        function searchModules() {
+  var input, filter, links, linkText, a, i;
+  input = document.getElementById("searchInput");
+  filter = input.value.toUpperCase();
+  links = document.getElementsByTagName("a");
+
+  for (i = 0; i < links.length; i++) {
+    linkText = links[i].textContent || links[i].innerText;
+    if (linkText.toUpperCase().indexOf(filter) > -1) {
+      links[i].style.display = "";
+    } else {
+      links[i].style.display = "none";
+    }
+  }
+}
+const notificationBtn = document.querySelector('.notification-btn');
+const notificationCount = document.querySelector('.notification-count');
+const notificationList = document.querySelector('.notification-list');
+const noNotificationsMessage = document.querySelector('.no-notifications');
+
+// Sample notifications data
+const notifications = [
+  
+];
+
+// Function to update notification count
+function updateNotificationCount() {
+  notificationCount.textContent = notifications.length;
+}
+
+// Function to display notifications
+function displayNotifications() {
+  if (notifications.length === 0) {
+    noNotificationsMessage.style.display = 'block';
+  } else {
+    noNotificationsMessage.style.display = 'none';
+    notificationList.innerHTML = '';
+    notifications.forEach(notification => {
+      const notificationItem = document.createElement('div');
+      notificationItem.textContent = notification;
+      notificationList.appendChild(notificationItem);
+    });
+  }
+}
+
+// Update notification count and display notifications on page load
+updateNotificationCount();
+displayNotifications();
+
+// Add click event listener to the notification button
+notificationBtn.addEventListener('click', () => {
+  const dropdown = document.querySelector('.notification-dropdown');
+  dropdown.style.display = dropdown.style.display === 'none' ? 'block' : 'none';
+});
+let recognition;
+
+function startRecording() {
+  recognition = new webkitSpeechRecognition();
+  recognition.lang = 'en-US'; // Set the language for recognition
+  recognition.continuous = true; // Enable continuous recognition
+  recognition.interimResults = true; // Enable interim results
+
+  recognition.onresult = function(event) {
+    let transcript = '';
+    for (let i = event.resultIndex; i < event.results.length; i++) {
+      if (event.results[i].isFinal) {
+        transcript += event.results[i][0].transcript;
+      } else {
+        transcript += event.results[i][0].transcript;
+      }
+    }
+    document.getElementById('searchInput').value = transcript;
+  };
+
+  recognition.onend = function() {
+    recognition.start();
+  };
+
+  recognition.start();
+}
+
+document.getElementById('startRecordingBtn').addEventListener('click', startRecording);
+    </script>
+  </body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance</title>
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <div class="left">
+<div class="menu-btn">
+    <div class="dropdown">
+<button><i class="fa-solid fa-bars"></i></button>
+   
+        
+            
+            <div class="dropdown-content">
+                <div class="searchbar">
+                    <input type="text" placeholder="Search..." id="searchInput" onkeyup="searchModules()" class="search_bar">
+                </div>
+            <a href="../html/homepage.html"><span class="icon"><i class="fa-solid fa-house"></i></span>Home</a>
+            <a href="../html/dashboard.html"><span class="icon"><i class="fa-solid fa-book"></i></span>Online course</a>
+           <a href=""><span class="icon"><i class="fa-solid fa-file"></i></span>Notes</a>
+           <a href=""><span class="icon"><i class="fa-solid fa-user"></i></span>profile</a>
+           <a href="../html/assignment.html"><span class="icon"><i class="fa-solid fa-chart-simple"></i></span>Assignments</a>
+            <a href="../html/index.html"><span class="icon"><i class="fa-regular fa-calendar-days"></i></span>Attendance</a>
+            <a href=""><span class="icon"><i class="fa-solid fa-pen"></i></span>Online Exam</a>
+            <a href="../html/leaderboard.html"><span class="icon"><i class="fa-solid fa-trophy"></i></span>Leaderboard</a>
+            <a href=""><span class="icon"><i class="fa-solid fa-dollar-sign"></i></span>Fees</a>
+           <a href="../html/crt.html"><span class="icon"><i class="fa-solid fa-dollar-sign"></i></span>Training and Placement</a>
+            <a href="../html/result.html class="icon"><i class="fa-solid fa-chart-simple"></i></span>Result</a>
+        </div>
+      </div>
+    <div name="dropdown">
+        
+    </div>
+
+
+</div>
+<div class="college_name">
+<p>Oriental college of Technology</p>
+</div>
+</div>
+        <div class="right">
+          <div class="profile">
+            <div class="notification-container">
+              <button class="notification-btn">
+                <span class="notification-icon"> <i class="border fa-solid fa-bell"></i></span>
+                <span class="notification-count">0</span>
+              </button>
+              <div class="notification-dropdown">
+                <div class="notification-header">
+                  <h3>Notifications</h3>
+                </div>
+                <div class="notification-list">
+                  <p class="no-notifications">No new notifications</p>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown-module">
+              <button class="dropdown-btn-module">  <i class="border fa-solid fa-layer-group"></i></button>
+              <div class="dropdown-content-module">
+                <div class="dropdown-header-module">
+                  <h3>Modules</h3>
+                  <input type="text" placeholder="Search..." id="searchInput" onkeyup="searchModules()">
+                </div>
+                <div class="module-list-module">
+                  <a href="../html/homepage.html" class="module-container-module">
+                    <span class="icon-module"><i class="fa-solid fa-house"></i></span>
+                    <span class="module-name-module">Home</span>
+                  </a>
+                  <a href="../html/dashboard.html" class="module-container-module">
+                    <span class="icon-module"><i class="fa-solid fa-book"></i></span>
+                    <span class="module-name-module">Online course</span>
+                  </a>
+                  <a href="#" class="module-container-module">
+                    <span class="icon-module"><i class="fa-solid fa-file"></i></span>
+                    <span class="module-name-module">Notes</span>
+                  </a>
+                  <a href="#" class="module-container-module">
+                    <span class="icon-module"><i class="fa-solid fa-user"></i></span>
+                    <span class="module-name-module">Profile</span>
+                  </a>
+                  <a href="../html/index.html" class="module-container-module">
+                    <span class="icon-module"><i class="fa-solid fa-calendar-days"></i></span>
+                    <span class="module-name-module">Attendence</span>
+                  </a>
+                  <a href="#" class="module-container-module">
+                    <span class="icon-module"><i class="fa-solid fa-pen"></i></span>
+                    <span class="module-name-module">Online EXam</span>
+                  </a>
+                  <a href="../html/assignment.html" class="module-container-module">
+                    <span class="icon-module"><i class="fa-solid fa-chart-simple"></i></span>
+                    <span class="module-name-module">Assignments</span>
+                  </a>
+                  <a href="../html/leaderboard.html" class="module-container-module">
+                    <span class="icon-module"><i class="fa-solid fa-trophy"></i></span>
+                    <span class="module-name-module">Leaderboard</span>
+                  </a>
+                  <a href="#" class="module-container-module">
+                    <span class="icon-module"><i class="fa-solid fa-dollar-sign"></i></span>
+                    <span class="module-name-module">Fees</span>
+                  </a>
+                  <a href="../html/crt.html" class="module-container-module">
+                    <span class="icon-module"><i class="fa-solid fa-briefcase"></i></span>
+                    <span class="module-name-module">Training and Placement</span>
+                  </a>
+                  <a href="../html/result.html" class="module-container-module">
+                    <span class="icon-module"><i class="fa-solid fa-chart-simple"></i></span>
+                    <span class="module-name-module">Result</span>
+                  </a>
+                 
+                </div>
+              </div>
+            </div>
+
+      
+            <i class="border fa-regular fa-star-half-stroke"></i>
+            <div class="image-container-profile">
+              <img src="../media/profile.png" alt="Dropdown Image" class="dropdown-image-profile">
+              <div class="dropdown-content-profile">
+                <div class="dropdown-header-profile">
+                  <img src="../media/profile.png" alt="Dropdown Image" class="dropdown-image-small-profile">
+                </div>
+                <div class="option-container-profile">
+                  <h3>Degree</h3>
+                  <div class="options-profile">
+                    <div class="option-profile">
+                      BTech
+                      <div class="nested-dropdown-profile">
+                        <span class="nested-option-profile">CSE</span>
+                        <span class="nested-option-profile">CSDS</span>
+                        <span class="nested-option-profile">Cyber</span>
+                        <span class="nested-option-profile">Civil</span>
+                        <span class="nested-option-profile">Mechanical</span>
+                        <span class="nested-option-profile">EC</span>
+                        <span class="nested-option-profile">EX</span>
+                      </div>
+                    </div>
+                    <div class="option-profile">
+                      MBA
+                    </div>
+                    <div class="option-profile">
+                      Pharmacy
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="option-container-profile">
+                  <h3>Year</h3>
+                  <div class="options-profile">
+                    <span class="option-profile">2021</span>
+                    <span class="option-profile">2022</span>
+                    <span class="option-profile">2023</span>
+                    <span class="option-profile">2024</span>
+                    <span class="option-profile">2025</span>
+                    <span class="option-profile">2026</span>
+                    <span class="option-profile">2027</span>
+                    <span class="option-profile">2028</span>
+                    <span class="option-profile">2029</span>
+                    <span class="option-profile">2030</span>
+              
+                    
+
+
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="sign-out">
+              <i class="border fa-solid fa-power-off"></i>
+              <p class="border">Sign-out</p>
+            </div>
+          </div>      
+              </div>
+            </div>
+            <div class="heading">
+              <h1>Academic Planning</h1>
+            </div>
+           
+            <div class="-calendar-box">
+              <div class="-calendar-header">
+                  <button class="-calendar-nav-button" id="prevDate">
+                      <i class="fas fa-arrow-left"></i>
+                  </button>
+                  <div class="-calendar-date-display" id="dateDisplay"></div>
+                  <button class="-calendar-nav-button" id="nextDate">
+                      <i class="fas fa-arrow-right"></i>
+                  </button>
+              </div>
+              <div class="-calendar-graph">
+                  <!-- Time slots and attendance slots will be dynamically added here -->
+              </div>
+          </div>
+          <div class="container">
+            <div class="box">
+                <h2>Semester</h2>
+                <div class="degree-and-button">
+                    <p>Degree</p>
+                    <button class="view-subjects" onclick="openSlider()">View Subjects</button>
+                </div>
+            </div>
+            <div class="box">
+                <h2>Semester</h2>
+                <div class="degree-and-button">
+                    <p>Degree</p>
+                    <button class="view-subjects" onclick="openSlider()">View Subjects</button>
+                </div>
+            </div>
+            <div class="box">
+                <h2>Semester</h2>
+                <div class="degree-and-button">
+                    <p>Degree</p>
+                    <button class="view-subjects" onclick="openSlider()">View Subjects</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="slider-container" id="sliderContainer">
+            <button class="slider-nav-button" id="prevButton"><i class="fas fa-arrow-left"></i></button>
+            <div class="slider" id="slider">
+                <!-- Subject boxes will be dynamically added here -->
+            </div>
+            <button class="slider-nav-button" id="nextButton"><i class="fas fa-arrow-right"></i></button>
+        </div>
+
+    
+    <script src="../js/script.js"></script>
+
+        </body>
+</html>

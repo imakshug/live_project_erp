@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard </title>
+    <!-- font super icons as Fonts -->
+    <script src="https://kit.fontawesome.com/4e6c12451b.js" crossorigin="anonymous"></script>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="../css/leaderboard.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="left">
+<div class="menu-btn">
+    <div class="dropdown">
+<button><i class="fa-solid fa-bars"></i></button>
+   
+        
+            
+            <div class="dropdown-content">
+                <div class="searchbar">
+                    <input type="text" placeholder="Search..." id="searchInput" onkeyup="searchModules()" class="search_bar">
+                </div>
+                <a href="../html/homepage.html"><span class="icon"><i class="fa-solid fa-house"></i></span>Home</a>
+                <a href="../html/dashboard.html"><span class="icon"><i class="fa-solid fa-book"></i></span>Online course</a>
+               <a href=""><span class="icon"><i class="fa-solid fa-file"></i></span>Notes</a>
+               <a href="../html/assignment.html"><span class="icon"><i class="fa-solid fa-chart-simple"></i></span>Assignments</a>
+               <a href=""><span class="icon"><i class="fa-solid fa-user"></i></span>profile</a>
+                <a href="../html/index.html"><span class="icon"><i class="fa-regular fa-calendar-days"></i></span>Attendance</a>
+                <a href=""><span class="icon"><i class="fa-solid fa-pen"></i></span>Online Exam</a>
+                <a href="../html/leaderboard.html"><span class="icon"><i class="fa-solid fa-trophy"></i></span>Leaderboard</a>
+                <a href=""><span class="icon"><i class="fa-solid fa-dollar-sign"></i></span>Fees</a>
+               <a href="../html/crt.html"><span class="icon"><i class="fa-solid fa-dollar-sign"></i></span>Training and Placement</a>
+                <a href="../html/result.html"><span class="icon"><i class="fa-solid fa-chart-simple"></i></span>Result</a>
+        </div>
+      </div>
+    <div name="dropdown">
+        
+    </div>
+
+
+</div>
+<div class="college_name">
+<p>Oriental college of Technology</p>
+</div>
+</div>
+        <div class="right">
+          <div class="profile">
+            <div class="notification-container">
+              <button class="notification-btn">
+                <span class="notification-icon"> <i class="border fa-solid fa-bell"></i></span>
+                <span class="notification-count">0</span>
+              </button>
+              <div class="notification-dropdown">
+                <div class="notification-header">
+                  <h3>Notifications</h3>
+                </div>
+                <div class="notification-list">
+                  <p class="no-notifications">No new notifications</p>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown-module">
+              <button class="dropdown-btn-module">  <i class="border fa-solid fa-layer-group"></i></button>
+              <div class="dropdown-content-module">
+                <div class="dropdown-header-module">
+                  <h3>Modules</h3>
+                  <input type="text" placeholder="Search..." id="searchInput" onkeyup="searchModules()">
+                </div>
+                <div class="module-list-module">
+                  <a href="../html/homepage.html" class="module-container-module">
+                    <span class="icon-module"><i class="fa-solid fa-house"></i></span>
+                    <span class="module-name-module">Home</span>
+                  </a>
+                  <a href="../html/dashboard.html" class="module-container-module">
+                    <span class="icon-module"><i class="fa-solid fa-book"></i></span>
+                    <span class="module-name-module">Online course</span>
+                  </a>
+                  <a href="#" class="module-container-module">
+                    <span class="icon-module"><i class="fa-solid fa-file"></i></span>
+                    <span class="module-name-module">Notes</span>
+                  </a>
+                  <a href="#" class="module-container-module">
+                    <span class="icon-module"><i class="fa-solid fa-user"></i></span>
+                    <span class="module-name-module">Profile</span>
+                  </a>
+                  <a href="../html/index.html" class="module-container-module">
+                    <span class="icon-module"><i class="fa-solid fa-calendar-days"></i></span>
+                    <span class="module-name-module">Attendence</span>
+                  </a>
+                  <a href="#" class="module-container-module">
+                    <span class="icon-module"><i class="fa-solid fa-pen"></i></span>
+                    <span class="module-name-module">Online EXam</span>
+                  </a>
+                  <a href="../html/assignment.html" class="module-container-module">
+                    <span class="icon-module"><i class="fa-solid fa-chart-simple"></i></span>
+                    <span class="module-name-module">Assignments</span>
+                  </a>
+                  <a href="../html/leaderboard.html" class="module-container-module">
+                    <span class="icon-module"><i class="fa-solid fa-trophy"></i></span>
+                    <span class="module-name-module">Leaderboard</span>
+                  </a>
+                  <a href="#" class="module-container-module">
+                    <span class="icon-module"><i class="fa-solid fa-dollar-sign"></i></span>
+                    <span class="module-name-module">Fees</span>
+                  </a>
+                  <a href="../html/crt.html" class="module-container-module">
+                    <span class="icon-module"><i class="fa-solid fa-briefcase"></i></span>
+                    <span class="module-name-module">Training and Placement</span>
+                  </a>
+                  <a href="../html/result.html" class="module-container-module">
+                    <span class="icon-module"><i class="fa-solid fa-chart-simple"></i></span>
+                    <span class="module-name-module">Result</span>
+                  </a>
+                 
+                </div>
+              </div>
+            </div>
+
+      
+            <i class="border fa-regular fa-star-half-stroke"></i>
+            <div class="image-container-profile">
+              <img src="../media/profile.png" alt="Dropdown Image" class="dropdown-image-profile">
+              <div class="dropdown-content-profile">
+                <div class="dropdown-header-profile">
+                  <img src="../media/profile.png" alt="Dropdown Image" class="dropdown-image-small-profile">
+                </div>
+                <div class="option-container-profile">
+                  <h3>Degree</h3>
+                  <div class="options-profile">
+                    <div class="option-profile">
+                      BTech
+                      <div class="nested-dropdown-profile">
+                        <span class="nested-option-profile">CSE</span>
+                        <span class="nested-option-profile">CSDS</span>
+                        <span class="nested-option-profile">Cyber</span>
+                        <span class="nested-option-profile">Civil</span>
+                        <span class="nested-option-profile">Mechanical</span>
+                        <span class="nested-option-profile">EC</span>
+                        <span class="nested-option-profile">EX</span>
+                      </div>
+                    </div>
+                    <div class="option-profile">
+                      MBA
+                    </div>
+                    <div class="option-profile">
+                      Pharmacy
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="option-container-profile">
+                  <h3>Year</h3>
+                  <div class="options-profile">
+                    <span class="option-profile">2021</span>
+                    <span class="option-profile">2022</span>
+                    <span class="option-profile">2023</span>
+                    <span class="option-profile">2024</span>
+                    <span class="option-profile">2025</span>
+                    <span class="option-profile">2026</span>
+                    <span class="option-profile">2027</span>
+                    <span class="option-profile">2028</span>
+                    <span class="option-profile">2029</span>
+                    <span class="option-profile">2030</span>
+              
+                    
+
+
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="sign-out">
+              <i class="border fa-solid fa-power-off"></i>
+              <p class="border">Sign-out</p>
+            </div>
+          </div>      
+              </div>
+            </div>
+            <main>
+              <!-- profile -->
+              <section>
+                  <div class="student-profile">
+                      <div class="profile">
+                          <div class="profile__border">
+                              <img src="../media/profile.png"  class="profile__img">
+                          </div>
+          
+                          <h3 class="profile__name">Student</h3>
+                          <span class="profile__branch">CSE</span>
+          
+                      
+                      </div>
+                  </div>
+              </section>
+              <!-- Top Student   -->
+              <section class="leaderboard">
+                  <div class="top-students">
+                      <h2 class="section-title">Top Students</h2>
+                      <div class="students">
+                          
+                          <div class="student">
+                              <img >
+                              <h3 class="student-name">Top Student 1</h3>
+                          </div>
+                          <div class="student">
+                              <img >
+                              <h3 class="student-name">Top Student 2</h3>
+                          </div>
+                          <div class="student">
+                              <img  >
+                              <h3 class="student-name">Top Student 3</h3>
+                          </div>
+                          <div class="student">
+                              <img  >
+                              <h3 class="student-name">Top Student 4</h3>
+                          </div>
+                          <div class="student">
+                              <img  >
+                              <h3 class="student-name">Top Student 5</h3>
+                          </div>
+                          <div class="student">
+                              <img  >
+                              <h3 class="student-name">Top Student 6</h3>
+                          </div>
+                      </div>
+                  </div>
+              </section>
+             
+          </main>
+</body>
+</html>

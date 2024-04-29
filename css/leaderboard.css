@@ -1,0 +1,500 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* common styles or utilities*/
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: var(--mainColor);
+  }
+  
+  :root {
+    --bgColor:  rgb(0,153,159);
+    --mainColor: white;
+    --shadowColor: rgb(82, 82, 82);
+  }
+  
+  
+  /* Header Content */
+  
+  
+  /* Navbar Content Start */
+  
+  
+  
+  
+  
+  .navbar {
+      width: 100%;  
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgb(0,153,159);
+      /* background-color:#13569b; */
+      color: white;
+      /* padding: 10px; */
+      padding: 10px;
+      height: 65px;
+    }
+    
+    .left {
+      display: flex;
+      align-items: center;
+    }
+    
+    .menu-btn {
+      background-color: transparent;
+      border: none;
+      background-color: rgb(0,153,159);
+      color: white;
+      font-size: 10px;
+      cursor: pointer;
+      margin-right: 10px;
+     
+    }
+    .search_bar{
+      margin: 5px ;
+      padding: 10px;
+    }
+    
+    .college_name {
+      cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 2em;
+    color: var(--mainColor);
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2rem;
+      transition: all .2s ease-in-out;
+    }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+  
+    }
+    
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: rgb(0,153,159);
+      /* background-color:#13569b; */
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      font-size: 20px;
+      
+    }
+    
+    .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: #f4caca;
+      color: black;
+    }
+    
+    .icon {
+      margin-right: 8px;
+  
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .navbar .profile {
+      font-size: large;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+    
+    
+    .fa-layer-group {
+      cursor: pointer;
+    }
+    
+    
+    .navbar .profile .sign-out {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      margin-left: 30px;
+      cursor: pointer;
+      font-size: 1.2rem;
+      color: var(--mainColor);
+    }
+  
+    /* notification start */
+    .notification-container {
+      position: relative;
+      display: inline-block;
+     } 
+    
+    .notification-btn {
+      background-color:rgb(0,153,159) ;
+      color: white;
+      padding: 5px;
+      font-size: 1.2rem;
+      border: none;
+      cursor: pointer;
+      position: relative;
+    }
+    
+    .notification-icon {
+      font-size: 1.2rem;
+    }
+    
+    .notification-count {
+      position: absolute;
+      top: -8px;
+      right: -8px;
+      background-color:white;
+      color: rgb(0,153,159) ;
+      padding: 4px 6px;
+      border-radius: 50%;
+      font-size: 12px;
+    }
+    
+    .notification-dropdown {
+      display: none;
+      position: absolute;
+      background-color: rgb(0,153,159) ;
+      min-width: 200px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      right: 0;
+    }
+    
+    .notification-header {
+      padding: 10px;
+      background-color: white;
+      color:  black;
+    }
+    
+    .notification-list {
+      padding: 10px;
+    }
+    
+    .no-notifications {
+      color: white;
+      text-align: center;
+    }
+    
+    .notification-container:hover .notification-dropdown {
+      display: block;
+    }
+    /* end */
+    /* module */
+    .dropdown-module {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown-btn-module {
+      background-color: rgb(0,153,159) ;
+      color: white;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .dropdown-content-module {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 200px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      max-height: 300px;
+      overflow-y: auto;
+    }
+    
+    .dropdown-header-module {
+      padding: 10px;
+      background-color: rgb(0,153,159) ;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .dropdown-header-module input {
+      padding: 10px;
+      margin:5px;
+      border: 1px solid white;
+      border-radius: 4px;
+    }
+    
+    .module-list-module {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 10px;
+    }
+    
+    .module-container-module {
+      background-color: white;
+      color: rgb(0,153,159) ;
+      padding: 10px;
+      margin: 5px;
+      border-radius: 4px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      flex-basis: calc(33.33% - 10px);
+      box-sizing: border-box;
+      transition: background-color 0.3s ease;
+    }
+    
+    .module-container-module:hover {
+      background-color: rgb(0,153,159) ;
+      color: white;
+    }
+    
+    .icon-module {
+      margin-right: 8px;
+    }
+    
+    .dropdown-module:hover .dropdown-content-module {
+      display: block;
+    }
+    
+    .dropdown-module:hover .dropdown-btn-module {
+      background-color: rgb(0,153,159) ;
+    }
+    /* end */
+    /* image */
+    .image-container-profile {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown-image-profile {
+      cursor: pointer;
+      max-width: 50px;
+      border-radius: 20px;
+    }
+    
+    .dropdown-content-profile {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 300px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      padding: 10px;
+      max-width: 90vw; 
+      max-height: 90vh; 
+      overflow: auto; 
+    }
+    
+    .dropdown-header-profile {
+      padding: 10px;
+      background-color: rgb(0,153,159) ;
+      text-align: center;
+    }
+    
+    .dropdown-image-small-profile {
+      max-width: 80px; 
+    }
+    
+    .option-container-profile {
+      margin-bottom: 20px;
+    }
+    
+    .option-container-profile h3 {
+      color: rgb(0,153,159) ;
+      margin-bottom: 5px;
+    }
+    
+    
+    .options-profile {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .option-profile {
+      background-color: rgb(0,153,159) ;
+      color: white;
+      padding: 5px 10px;
+      margin-right: 5px;
+      margin-bottom: 5px;
+      border-radius: 4px;
+      cursor: pointer;
+      position: relative;
+    }
+    
+    .option-profile:hover {
+      background-color: rgb(0,153,159) ;
+    }
+    
+    .nested-dropdown-profile {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      padding: 10px;
+      left: 100%;
+      top: 0;
+    }
+    
+    .nested-option-profile {
+      display: block;
+      padding: 5px 10px;
+      cursor: pointer;
+      color: black;
+    }
+    
+    .nested-option-profile:hover {
+      background-color: rgb(0,153,159) ;
+      color: white;
+    }
+    
+    .option-profile:hover .nested-dropdown-profile {
+      display: block;
+    }
+    
+    .image-container-profile:hover .dropdown-content-profile {
+      display: block;
+    }
+    /* end */
+   /* navbar end */
+
+
+/* body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3f1ff;
+} */
+
+ /*=============== Profile ===============*/
+ .student-profile {
+  height: 40vh;
+  margin-inline: 1.5rem;
+  display: grid;
+  place-items: center;
+}
+
+.profile {
+  position: relative;
+  width: 256px;
+  background-color:rgb(0,153,159);
+  padding: 1.25rem 2rem 3rem;
+  margin-bottom: 1rem;
+  border-radius: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.2);
+}
+.profile__img {
+  width: 96px;
+  border-radius: 50%;
+}
+.profile__border {
+  width: 110px;
+  height: 110px;
+  border: 2px solid  black;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 0.75rem;
+}
+.profile__name {
+  color:  white;
+  font-size: 24px ;
+  font-weight: 500;
+}
+.profile__branch {
+  color: var(--text-color);
+  font-size: var(--smaller-font-size);
+  font-weight: 500;
+}
+
+/* leaderboard */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+.container{
+    background-color: #ffffff;
+    width: 878px;
+    padding: 34px;
+    margin-top: 21px;
+    border-radius: 7px;
+}
+.top-students{
+    margin-bottom: 30px;
+}
+hr{
+    border: 1px solid #d1d1d1;
+    margin-bottom: 27px;
+}
+/* top players style */
+.section-title{
+    color: black;
+    font-size: 28px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding-bottom: 3px;
+}
+.students{
+    margin-top: 4px ;
+    display: grid;
+    /* grid-template-columns: repeat(1fr, 1fr, 1fr); */
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+}
+.student{
+    display: flex;
+    align-items: center;
+}
+.student img{
+    height: 58px;
+    width: 58px;
+}
+.student-name{
+    margin-left: 17px;
+    font-size: 18px;
+}
+/* ---------------
+    Media Queries 
+------------------*/
+/* Mobile Devices */
+@media only screen and (max-width: 687px) {
+    .container{
+        width: 100%;
+    }
+    .students{
+        background-color: #7fffd4;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .student {
+        flex-direction: column;
+    }
+}
+/* tablet deevices */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    .container{
+        width: 100%;
+    }
+    .students{
+        background-color: #7fb6ff;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
