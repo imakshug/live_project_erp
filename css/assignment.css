@@ -92,7 +92,7 @@ td button {
 @media only screen and (max-width: 600px) {
     th,
     td {
-        padding: 6px 10px; /* Further adjust padding for smaller screens */
-        font-size: 10px; /* Further reduce font size for smaller screens */
+        padding: 6px 10px;
+        font-size: 10px;
     }
 }

@@ -163,3 +163,36 @@ th:hover {
   margin-left: auto;
   margin-right: auto;
 }
+
+@media screen and (max-width: 768px) {
+  .container {
+    overflow-y: auto;
+    background-color: transparent;
+    gap: 3rem;
+    padding: 5px;
+    margin-top: -4px;
+  }
+
+  .card1, .card2, .card3, .card4 {
+    width: 70%;
+    margin: 20px 5px;
+  }
+
+  table {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .container{
+    overflow-y: auto;
+    background-color: transparent;
+    gap: 3rem;
+    padding: 5px;
+    margin-top: -4px;
+  }
+  .card1, .card2, .card3, .card4 {
+    width: 70%;
+    margin: 20px 5px;
+  }
+}
