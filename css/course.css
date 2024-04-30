@@ -6,6 +6,9 @@
 #root{
     background-color: white;
 }
+body{
+  overflow-x: hidden;
+}
 
 .navbar {
   width: 100%;

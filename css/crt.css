@@ -4,6 +4,9 @@
   background-color: rgb(0, 153, 159);
 }
 
+body{
+  overflow-x: hidden;
+}
 .container {
   width: 97%;
   height: 120%;

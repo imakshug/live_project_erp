@@ -15,6 +15,7 @@ body {
   height: 300px; */
   /* border: solid 1px #ccc; */
   background-color: rgb(77, 139, 158);
+  overflow-x: hidden;
 }
 
 table {
